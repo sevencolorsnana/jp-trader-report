@@ -46,10 +46,15 @@
           border-radius:12px; padding:12px; color:var(--blu); text-decoration:none; margin-top:8px; }
   .pill { display:inline-block; background:var(--card); border:1px solid var(--line);
           border-radius:999px; padding:4px 10px; font-size:12px; color:var(--mut); margin-right:6px; }
+  input,button { font-size:16px; padding:10px; border-radius:8px;
+          border:1px solid var(--line); background:#0f1117; color:var(--tx); }
+  label { display:block; margin:8px 0; color:var(--mut); font-size:13px; }
+  label input { width:100%; margin-top:4px; }
+  button { background:var(--blu); color:#fff; border:none; width:100%; margin-top:10px; font-weight:600; }
 </style></head><body>
 <header>
   <h1>📈 モメンタム戦略</h1>
-  <div class="sub">更新 2026-06-20 01:37 ・ 枠 ¥700,000 ・ 上位7銘柄均等（1銘柄≈¥100,000）</div>
+  <div class="sub">更新 2026-06-20 10:09 ・ 枠 ¥380,000 ・ 上位10銘柄均等（1銘柄≈¥38,000）</div>
   <div class="sub">⚠️ 株価は前営業日終値の参考値（無料データ・約1日遅延）。実際の約定は月曜の寄付価格。</div>
 </header>
 
@@ -60,43 +65,75 @@
 
 <section>
   <h2>📊 現在の保有（時価モニター）</h2>
-  <div class="card hold">
-              <div class="r1"><span class="badge hold">継続</span>
+  <div class="card warn">
+              <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">7717 ブイ・テクノロジー</span></div>
-              <div class="r2"><span>@¥7,780</span><span class="mom">勢い +174.7%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
-              <div class="r1"><span class="badge hold">継続</span>
+              <div class="r2"><span>@¥8,430</span><span class="mom">勢い +196.9%</span></div>
+              <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card warn">
+              <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">5333 ＮＧＫ</span></div>
-              <div class="r2"><span>@¥7,308</span><span class="mom">勢い +123.3%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
+              <div class="r2"><span>@¥7,332</span><span class="mom">勢い +118.1%</span></div>
+              <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">8035 東京エレクトロン</span></div>
-              <div class="r2"><span>@¥76,080</span><span class="mom">勢い +151.0%</span></div>
+              <div class="r2"><span>@¥75,360</span><span class="mom">勢い +141.5%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">285A キオクシアホールディングス</span></div>
-              <div class="r2"><span>@¥96,900</span><span class="mom">勢い +918.9%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
-              <div class="r1"><span class="badge hold">継続</span>
+              <div class="r2"><span>@¥108,600</span><span class="mom">勢い +1062.7%</span></div>
+              <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
+              <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">4062 イビデン</span></div>
-              <div class="r2"><span>@¥25,715</span><span class="mom">勢い +361.0%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
+              <div class="r2"><span>@¥24,560</span><span class="mom">勢い +321.6%</span></div>
+              <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">7735 ＳＣＲＥＥＮホールディングス</span></div>
-              <div class="r2"><span>@¥16,425</span><span class="mom">勢い +156.8%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
-              <div class="r1"><span class="badge hold">継続</span>
+              <div class="r2"><span>@¥16,745</span><span class="mom">勢い +161.8%</span></div>
+              <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
+              <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">6101 ツガミ</span></div>
-              <div class="r2"><span>@¥7,670</span><span class="mom">勢い +168.3%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div>
+              <div class="r2"><span>@¥7,380</span><span class="mom">勢い +155.5%</span></div>
+              <div class="r3">⚠️ 順位低下・次回入替候補</div></div>
   <p class="note">日次で価格を自動更新。売買は月次リバランス時のみ。</p>
 </section>
+
+<section>
+  <h2>🧮 余力を入れて最適配分</h2>
+  <div class="steps">
+    <label>いまの余力（円）<input id="cap" type="number" inputmode="numeric" value="380000"></label>
+    <label>銘柄数<input id="topn" type="number" inputmode="numeric" value="10"></label>
+    <button onclick="calcAlloc()">配分を計算</button>
+  </div>
+  <div id="allocOut" style="margin-top:10px"></div>
+</section>
+<script>
+const CANDS = [{"code": "285A", "name": "キオクシアホールディングス", "price": 108600.0, "mom": 1062.7}, {"code": "6800", "name": "ヨコオ", "price": 6050.0, "mom": 175.0}, {"code": "6752", "name": "パナソニック　ホールディングス", "price": 4419.0, "mom": 127.5}, {"code": "7735", "name": "ＳＣＲＥＥＮホールディングス", "price": 16745.0, "mom": 161.8}, {"code": "8035", "name": "東京エレクトロン", "price": 75360.0, "mom": 141.5}, {"code": "6997", "name": "日本ケミコン", "price": 5670.0, "mom": 332.8}, {"code": "5384", "name": "フジミインコーポレーテッド", "price": 4800.0, "mom": 108.0}, {"code": "6266", "name": "タツモ", "price": 4635.0, "mom": 138.4}, {"code": "4980", "name": "デクセリアルズ", "price": 4859.0, "mom": 76.3}, {"code": "6490", "name": "ＰＩＬＬＡＲ", "price": 10980.0, "mom": 145.9}, {"code": "5333", "name": "ＮＧＫ", "price": 7332.0, "mom": 118.1}, {"code": "4968", "name": "荒川化学工業", "price": 2183.0, "mom": 87.2}, {"code": "6323", "name": "ローツェ", "price": 4864.0, "mom": 140.3}, {"code": "6963", "name": "ローム", "price": 5509.0, "mom": 160.2}, {"code": "6407", "name": "ＣＫＤ", "price": 7760.0, "mom": 181.2}, {"code": "4099", "name": "四国化成ホールディングス", "price": 7070.0, "mom": 156.0}, {"code": "4368", "name": "扶桑化学工業", "price": 4590.0, "mom": 116.5}, {"code": "6525", "name": "ＫＯＫＵＳＡＩ　ＥＬＥＣＴＲＩＣ", "price": 10165.0, "mom": 122.6}, {"code": "7715", "name": "長野計器", "price": 4535.0, "mom": 89.0}, {"code": "6779", "name": "日本電波工業", "price": 4660.0, "mom": 385.4}];
+function calcAlloc(){
+  const cap = +document.getElementById('cap').value || 0;
+  const n = Math.max(1, Math.min(+document.getElementById('topn').value || 10, CANDS.length));
+  const per = cap / n;
+  const picks = CANDS.slice(0, n);
+  let html = '', deployed = 0, bought = 0;
+  for (const c of picks){
+    const sh = Math.floor(per / c.price);
+    const amt = sh * c.price; deployed += amt; if (sh > 0) bought++;
+    const cls = sh > 0 ? 'buy' : 'warn';
+    html += `<div class="card ${cls}"><div class="r1"><span class="badge ${cls}">${sh>0?'買い':'予算不足'}</span> <span class="nm">${c.code} ${c.name}</span></div>`
+          + `<div class="r2"><span>@¥${c.price.toLocaleString()}</span><span class="mom">勢い +${c.mom}%</span></div>`
+          + `<div class="r3">${sh>0 ? ('<b>'+sh+'株</b> ≈ ¥'+amt.toLocaleString()) : '<span class=x>1株が予算超でスキップ</span>'}</div></div>`;
+  }
+  const cash = cap - deployed;
+  const head = `<div class="note">投入 ¥${deployed.toLocaleString()}（${bought}銘柄） / 余り現金 ¥${cash.toLocaleString()}。均等配分・寄付で発注。</div>`;
+  document.getElementById('allocOut').innerHTML = head + html;
+}
+calcAlloc();
+</script>
 
 <section>
   <h2>🚀 モメンタム上位15</h2>
   <table>
     <tr><td>#</td><td class="l">銘柄</td><td>株価</td><td>勢い(6M)</td></tr>
-    <tr><td>1</td><td class='l'>7717 ブイ・テクノロジー</td><td>¥7,780</td><td class='m'>+174.7%</td></tr><tr><td>2</td><td class='l'>5333 ＮＧＫ</td><td>¥7,308</td><td class='m'>+123.3%</td></tr><tr><td>3</td><td class='l'>8035 東京エレクトロン</td><td>¥76,080</td><td class='m'>+151.0%</td></tr><tr><td>4</td><td class='l'>285A キオクシアホールディングス</td><td>¥96,900</td><td class='m'>+918.9%</td></tr><tr><td>5</td><td class='l'>4062 イビデン</td><td>¥25,715</td><td class='m'>+361.0%</td></tr><tr><td>6</td><td class='l'>7735 ＳＣＲＥＥＮホールディングス</td><td>¥16,425</td><td class='m'>+156.8%</td></tr><tr><td>7</td><td class='l'>6101 ツガミ</td><td>¥7,670</td><td class='m'>+168.3%</td></tr><tr><td>8</td><td class='l'>6323 ローツェ</td><td>¥4,830</td><td class='m'>+142.2%</td></tr><tr><td>9</td><td class='l'>6997 日本ケミコン</td><td>¥5,530</td><td class='m'>+319.9%</td></tr><tr><td>10</td><td class='l'>6264 マルマエ</td><td>¥2,882</td><td class='m'>+212.1%</td></tr><tr><td>11</td><td class='l'>6266 タツモ</td><td>¥4,615</td><td class='m'>+144.1%</td></tr><tr><td>12</td><td class='l'>6996 ニチコン</td><td>¥4,705</td><td class='m'>+193.1%</td></tr><tr><td>13</td><td class='l'>6480 日本トムソン</td><td>¥2,292</td><td class='m'>+196.1%</td></tr><tr><td>14</td><td class='l'>6407 ＣＫＤ</td><td>¥7,840</td><td class='m'>+184.7%</td></tr><tr><td>15</td><td class='l'>6920 レーザーテック</td><td>¥56,450</td><td class='m'>+101.0%</td></tr>
+    <tr><td>1</td><td class='l'>285A キオクシアホールディングス</td><td>¥108,600</td><td class='m'>+1062.7%</td></tr><tr><td>2</td><td class='l'>6800 ヨコオ</td><td>¥6,050</td><td class='m'>+175.0%</td></tr><tr><td>3</td><td class='l'>6752 パナソニック　ホールディングス</td><td>¥4,419</td><td class='m'>+127.5%</td></tr><tr><td>4</td><td class='l'>7735 ＳＣＲＥＥＮホールディングス</td><td>¥16,745</td><td class='m'>+161.8%</td></tr><tr><td>5</td><td class='l'>8035 東京エレクトロン</td><td>¥75,360</td><td class='m'>+141.5%</td></tr><tr><td>6</td><td class='l'>6997 日本ケミコン</td><td>¥5,670</td><td class='m'>+332.8%</td></tr><tr><td>7</td><td class='l'>5384 フジミインコーポレーテッド</td><td>¥4,800</td><td class='m'>+108.0%</td></tr><tr><td>8</td><td class='l'>6266 タツモ</td><td>¥4,635</td><td class='m'>+138.4%</td></tr><tr><td>9</td><td class='l'>4980 デクセリアルズ</td><td>¥4,859</td><td class='m'>+76.3%</td></tr><tr><td>10</td><td class='l'>6490 ＰＩＬＬＡＲ</td><td>¥10,980</td><td class='m'>+145.9%</td></tr><tr><td>11</td><td class='l'>5333 ＮＧＫ</td><td>¥7,332</td><td class='m'>+118.1%</td></tr><tr><td>12</td><td class='l'>4968 荒川化学工業</td><td>¥2,183</td><td class='m'>+87.2%</td></tr><tr><td>13</td><td class='l'>6323 ローツェ</td><td>¥4,864</td><td class='m'>+140.3%</td></tr><tr><td>14</td><td class='l'>6963 ローム</td><td>¥5,509</td><td class='m'>+160.2%</td></tr><tr><td>15</td><td class='l'>6407 ＣＫＤ</td><td>¥7,760</td><td class='m'>+181.2%</td></tr>
   </table>
 </section>
 
