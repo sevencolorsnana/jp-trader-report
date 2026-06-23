@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0f1117">
 <title>モメンタム戦略ダッシュボード</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
   :root { --bg:#0f1117; --card:#1a1e27; --line:#262b36; --tx:#e6e6e6; --mut:#8b93a7;
           --grn:#2ecc71; --red:#e74c3c; --blu:#5b8def; --amb:#e0a92e; }
@@ -54,9 +55,26 @@
 </style></head><body>
 <header>
   <h1>📈 モメンタム戦略</h1>
-  <div class="sub">更新 2026-06-23 00:16 ・ 枠 ¥900,000 ・ 上位10銘柄均等（1銘柄≈¥90,000）</div>
+  <div class="sub">更新 2026-06-24 00:00 ・ 枠 ¥808,000 ・ 上位10銘柄均等（1銘柄≈¥80,800）</div>
   <div class="sub">⚠️ 株価は前営業日終値の参考値（無料データ・約1日遅延）。実際の約定は月曜の寄付価格。</div>
 </header>
+
+<section>
+  <h2>💰 資産推移（保有10銘柄の評価額）</h2>
+  <div class="stats">
+    <div class="stat"><div class="k">現在の評価額</div><div class="v">¥808,080</div></div>
+    <div class="stat"><div class="k">開始来</div><div class="v neg">¥-81,779（-9.2%）</div></div>
+  </div>
+  <div id="equityChart" style="height:240px;"></div>
+</section>
+<script>
+const EQ = {"d": ["2026-06-19", "2026-06-22", "2026-06-23"], "v": [889859.0, 890476.0, 808080.0]};
+Plotly.newPlot('equityChart', [
+  { type:'scatter', mode:'lines+markers', x:EQ.d, y:EQ.v, line:{color:'#5b8def',width:2},
+    marker:{size:4}, name:'評価額' }
+], { template:'plotly_dark', paper_bgcolor:'#0f1117', plot_bgcolor:'#0f1117',
+     margin:{t:10,r:10,b:30,l:60}, yaxis:{tickformat:',.0f'} }, {responsive:true,displayModeBar:false});
+</script>
 
 <section>
   <h2>📅 次回の入れ替え</h2>
@@ -68,43 +86,43 @@
   <div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">4047 関東電化工業</span></div>
-              <div class="r2"><span>@¥4,015</span><span class="mom">勢い +290.2%</span></div>
+              <div class="r2"><span>@¥3,895</span><span class="mom">勢い +266.1%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">4062 イビデン</span></div>
-              <div class="r2"><span>@¥24,560</span><span class="mom">勢い +321.6%</span></div>
+              <div class="r2"><span>@¥24,385</span><span class="mom">勢い +287.8%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6779 日本電波工業</span></div>
-              <div class="r2"><span>@¥4,660</span><span class="mom">勢い +385.4%</span></div>
+              <div class="r2"><span>@¥4,515</span><span class="mom">勢い +348.4%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6976 太陽誘電</span></div>
-              <div class="r2"><span>@¥19,315</span><span class="mom">勢い +473.1%</span></div>
+              <div class="r2"><span>@¥17,550</span><span class="mom">勢い +403.0%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">5801 古河電気工業</span></div>
-              <div class="r2"><span>@¥53,360</span><span class="mom">勢い +476.0%</span></div>
+              <div class="r2"><span>@¥58,000</span><span class="mom">勢い +493.7%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">285A キオクシアホールディングス</span></div>
-              <div class="r2"><span>@¥108,600</span><span class="mom">勢い +1062.7%</span></div>
+              <div class="r2"><span>@¥92,290</span><span class="mom">勢い +827.4%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6387 サムコ</span></div>
-              <div class="r2"><span>@¥14,580</span><span class="mom">勢い +282.7%</span></div>
+              <div class="r2"><span>@¥15,590</span><span class="mom">勢い +273.9%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6981 村田製作所</span></div>
-              <div class="r2"><span>@¥11,750</span><span class="mom">勢い +267.1%</span></div>
+              <div class="r2"><span>@¥12,250</span><span class="mom">勢い +282.3%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6787 メイコー</span></div>
-              <div class="r2"><span>@¥39,900</span><span class="mom">勢い +267.4%</span></div>
+              <div class="r2"><span>@¥37,050</span><span class="mom">勢い +233.8%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
               <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">3436 ＳＵＭＣＯ</span></div>
-              <div class="r2"><span>@¥4,254</span><span class="mom">勢い +236.4%</span></div>
+              <div class="r2"><span>@¥3,830</span><span class="mom">勢い +173.6%</span></div>
               <div class="r3">⚠️ 順位低下・次回入替候補</div></div>
   <p class="note">日次で価格を自動更新。売買は月次リバランス時のみ。</p>
 </section>
@@ -112,14 +130,14 @@
 <section>
   <h2>🧮 余力を入れて最適配分</h2>
   <div class="steps">
-    <label>いまの余力（円）<input id="cap" type="number" inputmode="numeric" value="900000"></label>
+    <label>いまの余力（円）<input id="cap" type="number" inputmode="numeric" value="808000"></label>
     <label>銘柄数<input id="topn" type="number" inputmode="numeric" value="10"></label>
     <button onclick="calcAlloc()">配分を計算</button>
   </div>
   <div id="allocOut" style="margin-top:10px"></div>
 </section>
 <script>
-const CANDS = [{"code": "285A", "name": "キオクシアホールディングス", "price": 108600.0, "mom": 1062.7}, {"code": "5801", "name": "古河電気工業", "price": 53360.0, "mom": 476.0}, {"code": "6976", "name": "太陽誘電", "price": 19315.0, "mom": 473.1}, {"code": "6779", "name": "日本電波工業", "price": 4660.0, "mom": 385.4}, {"code": "4062", "name": "イビデン", "price": 24560.0, "mom": 321.6}, {"code": "4047", "name": "関東電化工業", "price": 4015.0, "mom": 290.2}, {"code": "6387", "name": "サムコ", "price": 14580.0, "mom": 282.7}, {"code": "4392", "name": "ＦＩＧ", "price": 1143.0, "mom": 277.2}, {"code": "6787", "name": "メイコー", "price": 39900.0, "mom": 267.4}, {"code": "6981", "name": "村田製作所", "price": 11750.0, "mom": 267.1}, {"code": "3436", "name": "ＳＵＭＣＯ", "price": 4254.0, "mom": 236.4}, {"code": "6264", "name": "マルマエ", "price": 2917.0, "mom": 211.8}, {"code": "4004", "name": "レゾナック・ホールディングス", "price": 18390.0, "mom": 206.1}, {"code": "6278", "name": "ユニオンツール", "price": 25090.0, "mom": 206.0}, {"code": "7717", "name": "ブイ・テクノロジー", "price": 8430.0, "mom": 196.9}, {"code": "5074", "name": "テスホールディングス", "price": 938.0, "mom": 194.0}, {"code": "6996", "name": "ニチコン", "price": 4635.0, "mom": 192.8}, {"code": "7826", "name": "フルヤ金属", "price": 9090.0, "mom": 190.4}, {"code": "5706", "name": "三井金属", "price": 48820.0, "mom": 184.7}, {"code": "6407", "name": "ＣＫＤ", "price": 7760.0, "mom": 181.2}];
+const CANDS = [{"code": "285A", "name": "キオクシアホールディングス", "price": 92290.0, "mom": 827.4}, {"code": "5801", "name": "古河電気工業", "price": 58000.0, "mom": 493.7}, {"code": "6976", "name": "太陽誘電", "price": 17550.0, "mom": 403.0}, {"code": "6779", "name": "日本電波工業", "price": 4515.0, "mom": 348.4}, {"code": "4392", "name": "ＦＩＧ", "price": 1197.0, "mom": 297.7}, {"code": "4062", "name": "イビデン", "price": 24385.0, "mom": 287.8}, {"code": "6981", "name": "村田製作所", "price": 12250.0, "mom": 282.3}, {"code": "6387", "name": "サムコ", "price": 15590.0, "mom": 273.9}, {"code": "4047", "name": "関東電化工業", "price": 3895.0, "mom": 266.1}, {"code": "6787", "name": "メイコー", "price": 37050.0, "mom": 233.8}, {"code": "6264", "name": "マルマエ", "price": 3105.0, "mom": 224.6}, {"code": "6480", "name": "日本トムソン", "price": 2580.0, "mom": 216.2}, {"code": "5074", "name": "テスホールディングス", "price": 1054.0, "mom": 212.8}, {"code": "5016", "name": "ＪＸ金属", "price": 5335.0, "mom": 199.1}, {"code": "4004", "name": "レゾナック・ホールディングス", "price": 19325.0, "mom": 197.1}, {"code": "5706", "name": "三井金属", "price": 52930.0, "mom": 187.0}, {"code": "7717", "name": "ブイ・テクノロジー", "price": 8500.0, "mom": 184.8}, {"code": "7826", "name": "フルヤ金属", "price": 9550.0, "mom": 183.0}, {"code": "6800", "name": "ヨコオ", "price": 6350.0, "mom": 182.6}, {"code": "6278", "name": "ユニオンツール", "price": 24260.0, "mom": 181.8}];
 function calcAlloc(){
   const cap = +document.getElementById('cap').value || 0;
   const n = Math.max(1, Math.min(+document.getElementById('topn').value || 10, CANDS.length));
@@ -145,7 +163,7 @@ calcAlloc();
   <h2>🚀 モメンタム上位15</h2>
   <table>
     <tr><td>#</td><td class="l">銘柄</td><td>株価</td><td>勢い(6M)</td></tr>
-    <tr><td>1</td><td class='l'>285A キオクシアホールディングス</td><td>¥108,600</td><td class='m'>+1062.7%</td></tr><tr><td>2</td><td class='l'>5801 古河電気工業</td><td>¥53,360</td><td class='m'>+476.0%</td></tr><tr><td>3</td><td class='l'>6976 太陽誘電</td><td>¥19,315</td><td class='m'>+473.1%</td></tr><tr><td>4</td><td class='l'>6779 日本電波工業</td><td>¥4,660</td><td class='m'>+385.4%</td></tr><tr><td>5</td><td class='l'>4062 イビデン</td><td>¥24,560</td><td class='m'>+321.6%</td></tr><tr><td>6</td><td class='l'>4047 関東電化工業</td><td>¥4,015</td><td class='m'>+290.2%</td></tr><tr><td>7</td><td class='l'>6387 サムコ</td><td>¥14,580</td><td class='m'>+282.7%</td></tr><tr><td>8</td><td class='l'>4392 ＦＩＧ</td><td>¥1,143</td><td class='m'>+277.2%</td></tr><tr><td>9</td><td class='l'>6787 メイコー</td><td>¥39,900</td><td class='m'>+267.4%</td></tr><tr><td>10</td><td class='l'>6981 村田製作所</td><td>¥11,750</td><td class='m'>+267.1%</td></tr><tr><td>11</td><td class='l'>3436 ＳＵＭＣＯ</td><td>¥4,254</td><td class='m'>+236.4%</td></tr><tr><td>12</td><td class='l'>6264 マルマエ</td><td>¥2,917</td><td class='m'>+211.8%</td></tr><tr><td>13</td><td class='l'>4004 レゾナック・ホールディングス</td><td>¥18,390</td><td class='m'>+206.1%</td></tr><tr><td>14</td><td class='l'>6278 ユニオンツール</td><td>¥25,090</td><td class='m'>+206.0%</td></tr><tr><td>15</td><td class='l'>7717 ブイ・テクノロジー</td><td>¥8,430</td><td class='m'>+196.9%</td></tr>
+    <tr><td>1</td><td class='l'>285A キオクシアホールディングス</td><td>¥92,290</td><td class='m'>+827.4%</td></tr><tr><td>2</td><td class='l'>5801 古河電気工業</td><td>¥58,000</td><td class='m'>+493.7%</td></tr><tr><td>3</td><td class='l'>6976 太陽誘電</td><td>¥17,550</td><td class='m'>+403.0%</td></tr><tr><td>4</td><td class='l'>6779 日本電波工業</td><td>¥4,515</td><td class='m'>+348.4%</td></tr><tr><td>5</td><td class='l'>4392 ＦＩＧ</td><td>¥1,197</td><td class='m'>+297.7%</td></tr><tr><td>6</td><td class='l'>4062 イビデン</td><td>¥24,385</td><td class='m'>+287.8%</td></tr><tr><td>7</td><td class='l'>6981 村田製作所</td><td>¥12,250</td><td class='m'>+282.3%</td></tr><tr><td>8</td><td class='l'>6387 サムコ</td><td>¥15,590</td><td class='m'>+273.9%</td></tr><tr><td>9</td><td class='l'>4047 関東電化工業</td><td>¥3,895</td><td class='m'>+266.1%</td></tr><tr><td>10</td><td class='l'>6787 メイコー</td><td>¥37,050</td><td class='m'>+233.8%</td></tr><tr><td>11</td><td class='l'>6264 マルマエ</td><td>¥3,105</td><td class='m'>+224.6%</td></tr><tr><td>12</td><td class='l'>6480 日本トムソン</td><td>¥2,580</td><td class='m'>+216.2%</td></tr><tr><td>13</td><td class='l'>5074 テスホールディングス</td><td>¥1,054</td><td class='m'>+212.8%</td></tr><tr><td>14</td><td class='l'>5016 ＪＸ金属</td><td>¥5,335</td><td class='m'>+199.1%</td></tr><tr><td>15</td><td class='l'>4004 レゾナック・ホールディングス</td><td>¥19,325</td><td class='m'>+197.1%</td></tr>
   </table>
 </section>
 
