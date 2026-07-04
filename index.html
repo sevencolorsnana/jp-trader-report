@@ -55,7 +55,7 @@
 </style></head><body>
 <header>
   <h1>📈 モメンタム戦略</h1>
-  <div class="sub">更新 2026-07-03 12:19 ・ 枠 ¥808,000 ・ 上位10銘柄均等（1銘柄≈¥80,800）</div>
+  <div class="sub">更新 2026-07-04 10:18 ・ 枠 ¥769,344 ・ 上位10銘柄均等（1銘柄≈¥76,934）</div>
   <div class="sub">⚠️ 株価は前営業日終値の参考値（無料データ・約1日遅延）。実際の約定は月曜の寄付価格。</div>
 </header>
 
@@ -68,7 +68,7 @@
   <div id="equityChart" style="height:240px;"></div>
 </section>
 <script>
-const EQ = {"d": ["2026-06-19", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03"], "v": [889859.0, 890476.0, 808080.0, 804516.0, 847884.0, 787018.0, 746958.0, 757199.0, 799475.0, 737668.0, 769344.0]};
+const EQ = {"d": ["2026-06-19", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03"], "v": [889859.0, 890476.0, 808080.0, 804516.0, 836599.0, 746266.0, 746958.0, 757199.0, 799475.0, 737668.0, 769344.0]};
 Plotly.newPlot('equityChart', [
   { type:'scatter', mode:'lines+markers', x:EQ.d, y:EQ.v, line:{color:'#5b8def',width:2},
     marker:{size:4}, name:'評価額' }
@@ -78,7 +78,7 @@ Plotly.newPlot('equityChart', [
 
 <section>
   <h2>📅 次回の入れ替え</h2>
-  <div class='card hold'><b>📅 次回リバランス：2026-07-03（第1金曜）</b><div class='note' style='margin-top:6px'>それまでは売買しない。順位が落ちても、入替は月1回だけ。日々の値動きは気にしない。</div></div>
+  <div class='card hold'><b>📅 次回リバランス：2026-08-07（第1金曜）</b><div class='note' style='margin-top:6px'>それまでは売買しない。順位が落ちても、入替は月1回だけ。日々の値動きは気にしない。</div></div>
 </section>
 
 <section>
@@ -99,8 +99,11 @@ Plotly.newPlot('equityChart', [
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6976 太陽誘電</span></div>
               <div class="r2"><span>@¥20,560</span><span class="mom">勢い +467.0%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card warn"><span class="nm">5801 古河電気工業</span>
-              <div class="r3 x">データ取得不可</div></div><div class="card hold">
+              <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
+              <div class="r1"><span class="badge warn">注意</span>
+                <span class="nm">5801 古河電気工業</span></div>
+              <div class="r2"><span>@¥4,000</span><span class="mom">勢い +295.3%</span></div>
+              <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">285A キオクシアホールディングス</span></div>
               <div class="r2"><span>@¥83,300</span><span class="mom">勢い +556.4%</span></div>
@@ -112,8 +115,11 @@ Plotly.newPlot('equityChart', [
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6981 村田製作所</span></div>
               <div class="r2"><span>@¥11,080</span><span class="mom">勢い +231.6%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card warn"><span class="nm">6787 メイコー</span>
-              <div class="r3 x">データ取得不可</div></div><div class="card hold">
+              <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
+              <div class="r1"><span class="badge warn">注意</span>
+                <span class="nm">6787 メイコー</span></div>
+              <div class="r2"><span>@¥29,330</span><span class="mom">勢い +175.7%</span></div>
+              <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">3436 ＳＵＭＣＯ</span></div>
               <div class="r2"><span>@¥5,094</span><span class="mom">勢い +227.4%</span></div>
@@ -124,7 +130,7 @@ Plotly.newPlot('equityChart', [
 <section>
   <h2>🧮 余力を入れて最適配分</h2>
   <div class="steps">
-    <label>いまの余力（円）<input id="cap" type="number" inputmode="numeric" value="808000"></label>
+    <label>いまの余力（円）<input id="cap" type="number" inputmode="numeric" value="769344"></label>
     <label>銘柄数<input id="topn" type="number" inputmode="numeric" value="10"></label>
     <button onclick="calcAlloc()">配分を計算</button>
   </div>
