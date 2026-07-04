@@ -55,7 +55,7 @@
 </style></head><body>
 <header>
   <h1>📈 モメンタム戦略</h1>
-  <div class="sub">更新 2026-07-04 10:31 ・ 枠 ¥805,344 ・ 上位10銘柄均等（1銘柄≈¥80,534）</div>
+  <div class="sub">更新 2026-07-04 10:46 ・ 枠 ¥805,344 ・ 上位10銘柄均等（1銘柄≈¥80,534）</div>
   <div class="sub">⚠️ 株価は前営業日終値の参考値（無料データ・約1日遅延）。実際の約定は月曜の寄付価格。</div>
 </header>
 
@@ -145,7 +145,9 @@ function calcAlloc(){
   const picks = CANDS.slice(0, n);
   let html = '', deployed = 0, bought = 0;
   for (const c of picks){
-    const sh = Math.floor(per / c.price);
+    // Nearest-to-budget share count; allow up to +15% overshoot (closer equal weight).
+    let sh = Math.round(per / c.price);
+    if (sh > 0 && (sh * c.price - per) > per * 0.15) sh = Math.floor(per / c.price);
     const amt = sh * c.price; deployed += amt; if (sh > 0) bought++;
     const cls = sh > 0 ? 'buy' : 'warn';
     html += `<div class="card ${cls}"><div class="r1"><span class="badge ${cls}">${sh>0?'買い':'予算不足'}</span> <span class="nm">${c.code} ${c.name}</span></div>`
