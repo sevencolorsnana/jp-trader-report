@@ -55,20 +55,20 @@
 </style></head><body>
 <header>
   <h1>📈 モメンタム戦略</h1>
-  <div class="sub">更新 2026-08-28 21:16 ・ 枠 ¥573,057 ・ 上位10銘柄均等（1銘柄≈¥57,306）</div>
+  <div class="sub">更新 2026-08-31 17:35 ・ 枠 ¥573,057 ・ 上位10銘柄均等（1銘柄≈¥57,306）</div>
   <div class="sub">⚠️ 株価は前営業日終値の参考値（無料データ・約1日遅延）。実際の約定は月曜の寄付価格。</div>
 </header>
 
 <section>
   <h2>💰 資産推移（保有10銘柄の評価額）</h2>
   <div class="stats">
-    <div class="stat"><div class="k">現在の評価額</div><div class="v">¥592,778</div></div>
-    <div class="stat"><div class="k">開始来</div><div class="v neg">¥-291,081（-32.9%）</div></div>
+    <div class="stat"><div class="k">現在の評価額</div><div class="v">¥588,443</div></div>
+    <div class="stat"><div class="k">開始来</div><div class="v neg">¥-295,416（-33.4%）</div></div>
   </div>
   <div id="equityChart" style="height:240px;"></div>
 </section>
 <script>
-const EQ = {"d": ["2026-06-19", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-21", "2026-07-22", "2026-07-23", "2026-07-24", "2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-10", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27"], "v": [883859.0, 894176.0, 818480.0, 814316.0, 860884.0, 800218.0, 799629.0, 818069.0, 861394.0, 794392.0, 827884.0, 789261.0, 719219.0, 693036.0, 711734.0, 748149.0, 698565.0, 696387.0, 712634.0, 658899.0, 587426.0, 616169.0, 598175.0, 598200.0, 574102.0, 574713.0, 511265.0, 474826.0, 485290.0, 548576.0, 561163.0, 587872.0, 638657.0, 601383.0, 588277.0, 600361.0, 610834.0, 635649.0, 635110.0, 657661.0, 619284.0, 580584.0, 585917.0, 575777.0, 574583.0, 589249.0, 589190.0, 592778.0]};
+const EQ = {"d": ["2026-06-19", "2026-06-22", "2026-06-23", "2026-06-24", "2026-06-25", "2026-06-26", "2026-06-29", "2026-06-30", "2026-07-01", "2026-07-02", "2026-07-03", "2026-07-06", "2026-07-07", "2026-07-08", "2026-07-09", "2026-07-10", "2026-07-13", "2026-07-14", "2026-07-15", "2026-07-16", "2026-07-17", "2026-07-21", "2026-07-22", "2026-07-23", "2026-07-24", "2026-07-27", "2026-07-28", "2026-07-29", "2026-07-30", "2026-07-31", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-06", "2026-08-07", "2026-08-10", "2026-08-12", "2026-08-13", "2026-08-14", "2026-08-17", "2026-08-18", "2026-08-19", "2026-08-20", "2026-08-21", "2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27", "2026-08-28"], "v": [883859.0, 894176.0, 818480.0, 814316.0, 860884.0, 800218.0, 799629.0, 818069.0, 861394.0, 794392.0, 827884.0, 789261.0, 719219.0, 693036.0, 711734.0, 748149.0, 698565.0, 696387.0, 712634.0, 658899.0, 587426.0, 616169.0, 598175.0, 598200.0, 574102.0, 574713.0, 511265.0, 474826.0, 485290.0, 548576.0, 561163.0, 587872.0, 638657.0, 601383.0, 588277.0, 600361.0, 610834.0, 635649.0, 635110.0, 657661.0, 619284.0, 580584.0, 585917.0, 575777.0, 574583.0, 589249.0, 589190.0, 592778.0, 588443.0]};
 Plotly.newPlot('equityChart', [
   { type:'scatter', mode:'lines+markers', x:EQ.d, y:EQ.v, line:{color:'#5b8def',width:2},
     marker:{size:4}, name:'評価額' }
@@ -86,43 +86,43 @@ Plotly.newPlot('equityChart', [
   <div class="card warn">
               <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">4047 関東電化工業</span></div>
-              <div class="r2"><span>@¥2,393</span><span class="mom">勢い +52.4%</span></div>
+              <div class="r2"><span>@¥2,360</span><span class="mom">勢い +40.5%</span></div>
               <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">4062 イビデン</span></div>
-              <div class="r2"><span>@¥20,545</span><span class="mom">勢い +158.4%</span></div>
-              <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
-              <div class="r1"><span class="badge hold">継続</span>
-                <span class="nm">6779 日本電波工業</span></div>
-              <div class="r2"><span>@¥2,829</span><span class="mom">勢い +134.8%</span></div>
+              <div class="r2"><span>@¥20,175</span><span class="mom">勢い +149.1%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
               <div class="r1"><span class="badge warn">注意</span>
-                <span class="nm">6976 太陽誘電</span></div>
-              <div class="r2"><span>@¥8,900</span><span class="mom">勢い +109.9%</span></div>
+                <span class="nm">6779 日本電波工業</span></div>
+              <div class="r2"><span>@¥2,740</span><span class="mom">勢い +111.4%</span></div>
               <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
+                <span class="nm">6976 太陽誘電</span></div>
+              <div class="r2"><span>@¥9,244</span><span class="mom">勢い +111.7%</span></div>
+              <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
+              <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">285A キオクシアホールディングス</span></div>
-              <div class="r2"><span>@¥52,500</span><span class="mom">勢い +172.8%</span></div>
+              <div class="r2"><span>@¥47,900</span><span class="mom">勢い +136.0%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
               <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">6981 村田製作所</span></div>
-              <div class="r2"><span>@¥7,309</span><span class="mom">勢い +99.9%</span></div>
+              <div class="r2"><span>@¥7,397</span><span class="mom">勢い +94.2%</span></div>
               <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">3436 ＳＵＭＣＯ</span></div>
-              <div class="r2"><span>@¥3,434</span><span class="mom">勢い +114.4%</span></div>
+              <div class="r2"><span>@¥3,434</span><span class="mom">勢い +103.1%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">2737 トーメンデバイス</span></div>
-              <div class="r2"><span>@¥32,150</span><span class="mom">勢い +166.8%</span></div>
+              <div class="r2"><span>@¥31,950</span><span class="mom">勢い +150.4%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div><div class="card warn">
               <div class="r1"><span class="badge warn">注意</span>
                 <span class="nm">6237 イワキポンプ</span></div>
-              <div class="r2"><span>@¥4,130</span><span class="mom">勢い +58.2%</span></div>
+              <div class="r2"><span>@¥4,045</span><span class="mom">勢い +49.2%</span></div>
               <div class="r3">⚠️ 順位低下・次回入替候補</div></div><div class="card hold">
               <div class="r1"><span class="badge hold">継続</span>
                 <span class="nm">6098 リクルートホールディングス</span></div>
-              <div class="r2"><span>@¥16,970</span><span class="mom">勢い +151.0%</span></div>
+              <div class="r2"><span>@¥17,800</span><span class="mom">勢い +157.0%</span></div>
               <div class="r3">✅ 圏内（継続）</div></div>
   <p class="note">日次で価格を自動更新。売買は月次リバランス時のみ。</p>
 </section>
@@ -137,7 +137,7 @@ Plotly.newPlot('equityChart', [
   <div id="allocOut" style="margin-top:10px"></div>
 </section>
 <script>
-const CANDS = [{"code": "285A", "name": "キオクシアホールディングス", "price": 52500.0, "mom": 172.8}, {"code": "2737", "name": "トーメンデバイス", "price": 32150.0, "mom": 166.8}, {"code": "4062", "name": "イビデン", "price": 20545.0, "mom": 158.4}, {"code": "6098", "name": "リクルートホールディングス", "price": 16970.0, "mom": 151.0}, {"code": "6779", "name": "日本電波工業", "price": 2829.0, "mom": 134.8}, {"code": "8362", "name": "福井銀行", "price": 7090.0, "mom": 125.4}, {"code": "3436", "name": "ＳＵＭＣＯ", "price": 3434.0, "mom": 114.4}, {"code": "6027", "name": "弁護士ドットコム", "price": 5140.0, "mom": 113.2}, {"code": "6976", "name": "太陽誘電", "price": 8900.0, "mom": 109.9}, {"code": "3994", "name": "マネーフォワード", "price": 6428.0, "mom": 106.0}, {"code": "6480", "name": "日本トムソン", "price": 1788.0, "mom": 100.4}, {"code": "6981", "name": "村田製作所", "price": 7309.0, "mom": 99.9}, {"code": "8344", "name": "山形銀行", "price": 4600.0, "mom": 92.7}, {"code": "4443", "name": "Ｓａｎｓａｎ", "price": 2179.0, "mom": 91.5}, {"code": "8541", "name": "愛媛銀行", "price": 3120.0, "mom": 89.8}, {"code": "8388", "name": "阿波銀行", "price": 9950.0, "mom": 87.7}, {"code": "3156", "name": "レスター", "price": 5280.0, "mom": 84.5}, {"code": "8343", "name": "秋田銀行", "price": 8910.0, "mom": 84.5}, {"code": "6752", "name": "パナソニック　ホールディングス", "price": 4375.0, "mom": 83.7}, {"code": "8050", "name": "セイコーグループ", "price": 11150.0, "mom": 78.4}];
+const CANDS = [{"code": "6098", "name": "リクルートホールディングス", "price": 17800.0, "mom": 157.0}, {"code": "2737", "name": "トーメンデバイス", "price": 31950.0, "mom": 150.4}, {"code": "4062", "name": "イビデン", "price": 20175.0, "mom": 149.1}, {"code": "285A", "name": "キオクシアホールディングス", "price": 47900.0, "mom": 136.0}, {"code": "8362", "name": "福井銀行", "price": 7210.0, "mom": 114.6}, {"code": "6976", "name": "太陽誘電", "price": 9244.0, "mom": 111.7}, {"code": "6779", "name": "日本電波工業", "price": 2740.0, "mom": 111.4}, {"code": "3436", "name": "ＳＵＭＣＯ", "price": 3434.0, "mom": 103.1}, {"code": "3994", "name": "マネーフォワード", "price": 6712.0, "mom": 98.4}, {"code": "6027", "name": "弁護士ドットコム", "price": 5110.0, "mom": 98.3}, {"code": "4443", "name": "Ｓａｎｓａｎ", "price": 2315.0, "mom": 96.5}, {"code": "6981", "name": "村田製作所", "price": 7397.0, "mom": 94.2}, {"code": "8344", "name": "山形銀行", "price": 4730.0, "mom": 85.1}, {"code": "8541", "name": "愛媛銀行", "price": 3215.0, "mom": 85.0}, {"code": "6480", "name": "日本トムソン", "price": 1735.0, "mom": 82.4}, {"code": "6752", "name": "パナソニック　ホールディングス", "price": 4414.0, "mom": 79.3}, {"code": "8388", "name": "阿波銀行", "price": 10200.0, "mom": 78.9}, {"code": "6532", "name": "ベイカレント", "price": 8126.0, "mom": 77.8}, {"code": "6963", "name": "ローム", "price": 4830.0, "mom": 76.1}, {"code": "8343", "name": "秋田銀行", "price": 9060.0, "mom": 74.9}];
 function calcAlloc(){
   const cap = +document.getElementById('cap').value || 0;
   const n = Math.max(1, Math.min(+document.getElementById('topn').value || 10, CANDS.length));
@@ -165,7 +165,7 @@ calcAlloc();
   <h2>🚀 モメンタム上位15</h2>
   <table>
     <tr><td>#</td><td class="l">銘柄</td><td>株価</td><td>勢い(6M)</td></tr>
-    <tr><td>1</td><td class='l'>285A キオクシアホールディングス</td><td>¥52,500</td><td class='m'>+172.8%</td></tr><tr><td>2</td><td class='l'>2737 トーメンデバイス</td><td>¥32,150</td><td class='m'>+166.8%</td></tr><tr><td>3</td><td class='l'>4062 イビデン</td><td>¥20,545</td><td class='m'>+158.4%</td></tr><tr><td>4</td><td class='l'>6098 リクルートホールディングス</td><td>¥16,970</td><td class='m'>+151.0%</td></tr><tr><td>5</td><td class='l'>6779 日本電波工業</td><td>¥2,829</td><td class='m'>+134.8%</td></tr><tr><td>6</td><td class='l'>8362 福井銀行</td><td>¥7,090</td><td class='m'>+125.4%</td></tr><tr><td>7</td><td class='l'>3436 ＳＵＭＣＯ</td><td>¥3,434</td><td class='m'>+114.4%</td></tr><tr><td>8</td><td class='l'>6027 弁護士ドットコム</td><td>¥5,140</td><td class='m'>+113.2%</td></tr><tr><td>9</td><td class='l'>6976 太陽誘電</td><td>¥8,900</td><td class='m'>+109.9%</td></tr><tr><td>10</td><td class='l'>3994 マネーフォワード</td><td>¥6,428</td><td class='m'>+106.0%</td></tr><tr><td>11</td><td class='l'>6480 日本トムソン</td><td>¥1,788</td><td class='m'>+100.4%</td></tr><tr><td>12</td><td class='l'>6981 村田製作所</td><td>¥7,309</td><td class='m'>+99.9%</td></tr><tr><td>13</td><td class='l'>8344 山形銀行</td><td>¥4,600</td><td class='m'>+92.7%</td></tr><tr><td>14</td><td class='l'>4443 Ｓａｎｓａｎ</td><td>¥2,179</td><td class='m'>+91.5%</td></tr><tr><td>15</td><td class='l'>8541 愛媛銀行</td><td>¥3,120</td><td class='m'>+89.8%</td></tr>
+    <tr><td>1</td><td class='l'>6098 リクルートホールディングス</td><td>¥17,800</td><td class='m'>+157.0%</td></tr><tr><td>2</td><td class='l'>2737 トーメンデバイス</td><td>¥31,950</td><td class='m'>+150.4%</td></tr><tr><td>3</td><td class='l'>4062 イビデン</td><td>¥20,175</td><td class='m'>+149.1%</td></tr><tr><td>4</td><td class='l'>285A キオクシアホールディングス</td><td>¥47,900</td><td class='m'>+136.0%</td></tr><tr><td>5</td><td class='l'>8362 福井銀行</td><td>¥7,210</td><td class='m'>+114.6%</td></tr><tr><td>6</td><td class='l'>6976 太陽誘電</td><td>¥9,244</td><td class='m'>+111.7%</td></tr><tr><td>7</td><td class='l'>6779 日本電波工業</td><td>¥2,740</td><td class='m'>+111.4%</td></tr><tr><td>8</td><td class='l'>3436 ＳＵＭＣＯ</td><td>¥3,434</td><td class='m'>+103.1%</td></tr><tr><td>9</td><td class='l'>3994 マネーフォワード</td><td>¥6,712</td><td class='m'>+98.4%</td></tr><tr><td>10</td><td class='l'>6027 弁護士ドットコム</td><td>¥5,110</td><td class='m'>+98.3%</td></tr><tr><td>11</td><td class='l'>4443 Ｓａｎｓａｎ</td><td>¥2,315</td><td class='m'>+96.5%</td></tr><tr><td>12</td><td class='l'>6981 村田製作所</td><td>¥7,397</td><td class='m'>+94.2%</td></tr><tr><td>13</td><td class='l'>8344 山形銀行</td><td>¥4,730</td><td class='m'>+85.1%</td></tr><tr><td>14</td><td class='l'>8541 愛媛銀行</td><td>¥3,215</td><td class='m'>+85.0%</td></tr><tr><td>15</td><td class='l'>6480 日本トムソン</td><td>¥1,735</td><td class='m'>+82.4%</td></tr>
   </table>
 </section>
 
