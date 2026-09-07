@@ -55,7 +55,7 @@
 </style></head><body>
 <header>
   <h1>📈 モメンタム戦略</h1>
-  <div class="sub">更新 2026-09-07 14:29 ・ 枠 ¥573,057 ・ 上位10銘柄均等（1銘柄≈¥57,306）</div>
+  <div class="sub">更新 2026-09-07 14:38 ・ 枠 ¥573,057 ・ 上位10銘柄均等（1銘柄≈¥57,306）</div>
   <div class="sub">⚠️ 株価は前営業日終値の参考値（無料データ・約1日遅延）。実際の約定は次の東証営業日の寄付価格。</div>
 </header>
 
@@ -157,7 +157,7 @@ Plotly.newPlot('equityChart', [
   <div id="allocOut" style="margin-top:10px"></div>
 </section>
 <script>
-const CANDS = [{"code": "2737", "name": "トーメンデバイス", "price": 33050.0, "mom": 167.2}, {"code": "4062", "name": "イビデン", "price": 20475.0, "mom": 167.1}, {"code": "285A", "name": "キオクシアホールディングス", "price": 54460.0, "mom": 156.3}, {"code": "6098", "name": "リクルートホールディングス", "price": 16235.0, "mom": 149.2}, {"code": "6976", "name": "太陽誘電", "price": 9426.0, "mom": 135.7}, {"code": "8362", "name": "福井銀行", "price": 7050.0, "mom": 115.9}, {"code": "3994", "name": "マネーフォワード", "price": 6710.0, "mom": 103.7}, {"code": "8541", "name": "愛媛銀行", "price": 3210.0, "mom": 100.0}, {"code": "3436", "name": "ＳＵＭＣＯ", "price": 3229.0, "mom": 99.0}, {"code": "6779", "name": "日本電波工業", "price": 2604.0, "mom": 97.4}, {"code": "4180", "name": "Ａｐｐｉｅｒ　Ｇｒｏｕｐ", "price": 1512.0, "mom": 97.1}, {"code": "6981", "name": "村田製作所", "price": 7191.0, "mom": 93.3}, {"code": "8344", "name": "山形銀行", "price": 4635.0, "mom": 91.9}, {"code": "4443", "name": "Ｓａｎｓａｎ", "price": 2228.0, "mom": 88.8}, {"code": "6480", "name": "日本トムソン", "price": 1706.0, "mom": 87.1}, {"code": "5301", "name": "東海カーボン", "price": 1819.5, "mom": 86.6}, {"code": "6027", "name": "弁護士ドットコム", "price": 5120.0, "mom": 85.1}, {"code": "8388", "name": "阿波銀行", "price": 9940.0, "mom": 84.8}, {"code": "9552", "name": "クオンツ総研ホールディングス", "price": 1198.0, "mom": 82.9}, {"code": "8343", "name": "秋田銀行", "price": 9030.0, "mom": 81.7}];
+const CANDS = [{"code": "2737", "name": "トーメンデバイス", "price": 33050.0, "mom": 167.2}, {"code": "4062", "name": "イビデン", "price": 20475.0, "mom": 167.1}, {"code": "285A", "name": "キオクシアホールディングス", "price": 54460.0, "mom": 156.3}, {"code": "6098", "name": "リクルートホールディングス", "price": 16235.0, "mom": 149.2}, {"code": "6976", "name": "太陽誘電", "price": 9426.0, "mom": 135.7}, {"code": "8362", "name": "福井銀行", "price": 7050.0, "mom": 115.9}, {"code": "3994", "name": "マネーフォワード", "price": 6710.0, "mom": 103.7}, {"code": "8541", "name": "愛媛銀行", "price": 3210.0, "mom": 100.0}, {"code": "3436", "name": "ＳＵＭＣＯ", "price": 3229.0, "mom": 99.0}, {"code": "4180", "name": "Ａｐｐｉｅｒ　Ｇｒｏｕｐ", "price": 1512.0, "mom": 97.1}, {"code": "8344", "name": "山形銀行", "price": 4635.0, "mom": 91.9}, {"code": "4443", "name": "Ｓａｎｓａｎ", "price": 2228.0, "mom": 88.8}, {"code": "6480", "name": "日本トムソン", "price": 1706.0, "mom": 87.1}, {"code": "5301", "name": "東海カーボン", "price": 1819.5, "mom": 86.6}, {"code": "6027", "name": "弁護士ドットコム", "price": 5120.0, "mom": 85.1}, {"code": "9552", "name": "クオンツ総研ホールディングス", "price": 1198.0, "mom": 82.9}, {"code": "3156", "name": "レスター", "price": 5220.0, "mom": 81.0}, {"code": "2767", "name": "円谷フィールズホールディングス", "price": 2495.0, "mom": 70.4}, {"code": "2531", "name": "宝ホールディングス", "price": 2457.5, "mom": 70.4}, {"code": "9278", "name": "ブックオフグループホールディングス", "price": 2966.0, "mom": 66.4}];
 function calcAlloc(){
   const cap = +document.getElementById('cap').value || 0;
   const n = Math.max(1, Math.min(+document.getElementById('topn').value || 10, CANDS.length));
